@@ -32,10 +32,10 @@ public class AppTwitter {
     public AppTwitter() {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("lBd3ZO7SOVZLJARTrAl2G8Huy")
-                .setOAuthConsumerSecret("ddLzCztA2hGngDeTWhGeU87eEUhlrLGDHWNn492KqAp4V6ySOz")
-                .setOAuthAccessToken("388293715-l0IVQBFt95I2lTLVbdjrVnLAyxQNGxdeJCDeSXvu")
-                .setOAuthAccessTokenSecret("rShhD4GfuQfP1wnKMqYVOenjeOjuLtibN1Kee0IO28GSI");
+                .setOAuthConsumerKey("***********")
+                .setOAuthConsumerSecret("*********")
+                .setOAuthAccessToken("***********")
+                .setOAuthAccessTokenSecret("*************");
         TwitterFactory tf = new TwitterFactory(cb.build());
         twitter = (Twitter) tf.getInstance();
     }
