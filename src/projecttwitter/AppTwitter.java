@@ -24,11 +24,11 @@ import twitter4j.conf.ConfigurationBuilder;
  */
 public class AppTwitter {
     
-    public Twitter twitter;
+    public Twitter twitter = TwitterFactory.getSingleton();
 /**
  * Usamos ConfigurationBuilder en el constructor con los token para que al iniciar la aplicacion 
  * cargue los datos de la cuenta.
- */
+ 
     public AppTwitter() {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
@@ -39,6 +39,8 @@ public class AppTwitter {
         TwitterFactory tf = new TwitterFactory(cb.build());
         twitter = (Twitter) tf.getInstance();
     }
+    * 
+    */
 
     /**
      * Método para ver la pagina de noticias en tiempo real.
